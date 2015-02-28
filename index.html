@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Dianna</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div id="header">
+  <h1>Intro to Programming</h1>
+  <h5>A Webpage By Dianna Hummel</h5>
+</div> <!--end of header-->
+
+<div class="new_stage">
+  <h1 >Stage 1: Web Development</h1>
+
+  <h3>Unit 1: Basics of the Web</h3>
+
+  <div class="subheadingbox">
+    <h4>The Web</h4>
+     <div class="box_description">
+      <p>
+      The web is a collection of html documents, that are linked by <em>Hyper Links</em>.  HTML(Hyper Text Markup Language) is the basis for everything on the web.  When we use our <b>computer/browser</b> (the program that runs on our computer to display files found on the web), to connect to the <b>internet</b> (the world's largest computer network), through <b>HTTP</b> (the main protocol of the web), then it connects to the <b>servers</b> (which host the files that make up the web).
+      </p>
+    </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>HTML</h4>
+     <div class="box_description">
+      <p>
+        HTML is made up of:
+      </p>
+      <ul>
+        <li><em>text content</em> (what we see) </li> 
+        <li><em>markup</em> (what it looks like)</li> 
+        <li><em>references to other documents</em> (e.g. images & videos)</li>  
+        <li><em>links to other pages</em></li>
+      </ul>
+      <p>
+        HTML markup consists of an opening tag and closing tags.  The entire piece of code is called an <em>element</em>.  <em>Attributes</em> are listed after the elements, but before the corresponding <em>value</em>.
+      </p>
+
+      <p>
+        Images(img elements) and links (a elements) are self-closing and are considered <em>Void</em> tags, because they don't contain content.
+      </p>
+   </div>
+</div>
+
+  <div class="subheadingbox">
+    <h4>A Little More Information...</h4>
+     <div class="box_description">
+      <p>
+        In HTML <em>Whitespace</em> turns everything into one line.  To seperate content into multiple lines we could use the "br" tag (which is a Void tag and it stands for "break").  The "p" tag is also another option (this element contains content and thus is not a void tag; it stands for "paragraph").
+      </p>
+
+      <p>
+        <em>Inline</em> and <em>Block</em> elements are used to seperate content.  An example of an inline element would be "br" because it just adds a break in the HTML line and wraps remaining text to the next line.  An example of a block element would be "p" because it creates an invisible box around the content.  Block elements also have a height and width.
+      </p>
+     </div>
+  </div><!--end of unit 1-->
+
+  <h3>Unit 2: Creating a Structured Document with HTML</h3>
+
+  <div class="subheadingbox">
+    <h4>Page Structure</h4>
+     <div class="box_description">
+      <p>
+       Websites are like a house: <em>HTML</em> is the structure or framing, <em>CSS</em> is the styling or color decor, and <em>Javascript</em> is the functional parts or garage door.
+      </p>  
+
+      <p>
+       HTML uses elements in a tree like structure, from which other elements branch.
+      </p>
+
+      <img class="htmltreeimg" alt="This is a html tree." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJUQjXDpyycZwyIeJ3nNt23b8BAfwnXBrBw2FtxiPwqoaKLyuy">
+
+      <h6>Example of HTML tree</h6>
+
+      <p>
+       When in developer mode in a browser, you can click through the HTML to see how the elements are nested, as well as viewing any styling that had to been added to that particular element.
+      </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>HTML, CSS, & DOM</h4>
+     <div class="box_description">
+      <p>
+        HTML is a <b>language with syntax+rules</b>, CSS is a <b>language that uses syntax+rules to change how elements look on the page</b>.
+      </p>
+
+      <p>
+        <em>Tags</em>: are part of elements that make up an HTML tree.  They know to do this through <em>DOM</em> (Document Object Model) which, is the standard convention for representing and interacting with HTML elements.  The tree we view in developer mode is the DOM tree that the browser built from the HTML document.
+      </p>
+
+      <ul>
+        <li>Each tag has an element that describes what type it is (e.g. p for paragraph)</li>
+        <li>Each tag can have attributes with values</li>
+      </ul>
+
+      <p>
+        An element consists of the beginning tag to the ending tag, and everything in between.  The content could be empty, text, or another element! With CSS you could say all h1 elements that belong to class “article” should be dark blue.  To tie structure and style together the HTML doc can provide the browser wth what style to use and where to get it from.
+      </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Boxes, Boxes Everywhere!!</h4>
+     <div class="box_description">
+      <p>
+        Even if a shape is a circle, in HTML it’s still a box.  If you right click and inspect element of a circle, it will show you where the shape is in the HTML document.  And it will show a highlighted area of a box on the webpage, so what makes it a circle? ....
+      </p>
+
+      <p>
+        <b><em>Border Radius</em></b> property.
+      </p>
+
+      <p>
+        By thinking of things in boxes it’s easier to rearrange your website.  A grid in background makes sure everything is aligned.  When plotting your squares and layout of HTML structure, remember:  <b>START BIG AND GO SMALLER</b>
+      </p>
+     </div>
+  </div><!--end of unit 2-->
+
+  <h3>Unit 3: Adding CSS Style to HTML Documents <span class="style">(cuz' everyone loves someone with style...)</span></h3>
+
+  <div class="subheadingbox">
+    <h4>Understanding CSS (aka Cascading Style Sheet)</h4>
+     <div class="box_description">
+      <p>
+        Now for some general laws...just like in our society; we have national laws, state laws, local municipality laws, and house rules.  CSS has laws/rules.  The most specific ruleis applied to every element.  Thus, our "house laws" would be the same as our "national laws".
+      </p>
+        <img class="cascadingimg" alt="This is an example CSS cascading." src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRxsP2w9jbFar8fXmVOXY4nOgZcYOTFZxQ88ilmowubiRFa6iu">
+      <p> 
+        Cascading means that rules are applied not only to the elements they directly match but also to all of the elements' child elements.  However, if a child element has multiple overlapping rules defined for it, the more specific rules apply.
+      </p>
+
+      <p>
+        When using CSS it can be helpful to think about it as a Search-n-Replace tool.  You identify a "class" or "tag" of the element you want to match and then what you want to do with, or what property values to replace with different ones.  Also, <em>where</em> and in what <em>order</em> matter.  Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+      </p>
+
+      <ul>
+        <li>the default style of a browser (different browsers have slightly different styles</li>
+        <li>stylesheet in a separate file (mostly used)</li>
+        <li>stylesheet inside a HTML (used for smaller projects, not ideal)</li>
+        <li>inline style in an element (should be avoided)</li>
+      </ul>
+
+      <p>
+        <em>Inheritance</em>: relies on the ancestor/descendant relationship to operate.  The idea by which properties are applied, not only to a specified element, but also it's descendants.  It relies on the document tree, the hierarchy of HTML elements.  Child elements may inherit CSS properties from any ancestor element enclosing it; they can also inherit text related properties, but box related properties are not inherited.
+      </p>
+      <ul>
+        <li>Properties that can be inherited:
+          <ul>
+            <li>color</li>
+            <li>font</li>
+            <li>letter spacing</li>
+            <li>line height</li>
+            <li>list style</li>
+            <li>text align/indent</li>
+            <li>text transform</li>
+            <li>visibilty</li>
+            <li>white space</li>
+            <li>word spacing</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul>
+        <li>Properties that can't be inherited:
+          <ul>
+            <li>background</li>
+            <li>border</li>
+            <li>display</li>
+            <li>float & clear</li>
+            <li>height & width</li>
+            <li>margin</li>
+            <li>min & max/ height & width</li>
+            <li>outline</li>
+            <li>overflow</li>
+            <li>padding</li>
+            <li>position</li>
+            <li>text decoration</li>
+            <li>vertical align</li>
+            <li>z index</li>
+          </ul>
+        </li>
+      </ul>      
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Selectors</h4>
+     <div class="box_description">
+      <p>
+        Selectors are what allows you to targe specifc HTML elements and apply style to them.  By doing this, you can condense your CSS to avoid unnecessary repetition, which waste time, and time is precious.  It is recommended that CSS and HTML are kept in two different files, by keeping the design away from the document they are easier to edit.  Selectors can be combined. Below is a list of different type of Selectors.
+      </p>
+      <dl>
+        <dt>ID Selectors</dt>
+          <dd>
+            Most powerful type of selector, beat out other types of selectors and styles.  Having lower specificity selectors are easier to override.
+          </dd>
+        <dt>Class Selectors</dt>
+          <dd>
+            Most useful and versatile.  Well supported in all browsers.  Add multiple classes separated by space on HTML elements.  Also JavaScript stuff you can do specifically for manipulating classes.
+          </dd>
+        <dt>Tag Selectors</dt>
+          <dd>
+            Most useful when changing properties that are unique to HTML element.  Like setting the list style on a "ul" or tab-size on a "pre".  Typically more useful to have class define styling that you can use on any HTML element.
+          </dd>
+        <dt>Attribute Selector</dt>
+          <dd>
+            More useful than classes because they have the same specificity value, but they can be any attribute, not just "class".  They also can have a value you can select by.
+          </dd>
+        <dt>Positional Selectors</dt>
+          <dd>
+            Several positional selectors beyond: nth-child; using simple expressions (like 3n="every third") you can select elements based on their position in the HTML.
+          </dd>
+        <dt>Other Pseudo Selectors</dt>
+          <dd>
+            ":empty" is one of many pseudo selectors, which you can recognize by the ":".  They typically represent something you couldn't know just by the element and attributes alone. *These are different than pseudo elements, which are recognizable by "::"-they are responsible for adding things to the page by the things they select.
+          </dd>
+      </dl>
+      <p>
+        Please refer to<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"> this CSS reference link for more information.</a>
+      </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Revisiting the BOX</h4>
+     <div class="box_description">
+      <p>
+        We know that everything on a webpage is made up of a box.  Which consists of 4 parts:
+      </p>
+      <ol>
+        <li>Content- this is the image or text that appears on the website, comparable to the nucleus of the box, the other layers serve to protect it so other things don't get to close or overlap</li>
+        <li>Padding- this clears an area around the content, is affected by background color, and is the space that protects the content directly</li>
+        <li>Border- inherits color property of box, incases the padding and content</li>
+        <li>Margin- goes around border, outer most layer, provides space between boxes, transparent</li>
+      </ol>
+       To deal with sizing issues, use: "box-sizing:border-box...however...to make sure older browsers are able to display this CSS, you must add browser specific prefixes "webkit, moz, ms".  If we set box size to percentage rather than pixels, the box sizing will adjust to size of screen.  When positioning boxes remember: *divs are block elements so by default they take up the entire width of a page, to deal with this we can add the "display:flex" to appropriate CSS will override this behavior and let divs appear next to each other!*  See <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">this link for more information on FlexBox</a>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Code, Test, & Refine!!</h4>
+     <div class="box_description">
+	      <p>
+        Compare your code to the design you were given...	How to know what to change?
+      </p>
+        <ol>
+          <li>Get page structure right, by visually boxifying it
+			            <ul>
+              <li>Look for natural boxes</li>
+            </ul>
+          </li>
+          <li>Move on to tags(make heading h1)
+            <ul>
+              <li>Look for repeated styles & semantic elements</li>
+            </ul>
+          </li>
+          <li>Size of boxes, how big, and how to position
+            <ul>
+              <li>Write html</li>
+              <li>Apply styles(biggest to smallest)</li>
+              <li>Fix things!</li>
+            </ul>
+          </li>
+        </ol>
+      <p>
+          Repeat steps above till it looks like the design mock up!  The fly without changing actual html and css files, just like a preview!  To verify code, go to the following links: <a href="http://validator.w3.org/#validate_by_input">HTML checker</a> and <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS checker</a>
+      </p>
+     </div>
+  </div>
+</div><!--end of stage 1 and end of unit 3-->
+
+<br>
+<div class="new_stage">  
+  <h1>Stage 2: Telling Computers What to Do</h1>
+
+  <h3>Unit 4: Intro to "Serious" Programming</h3>
+
+  <div class="subheadingbox">
+    <h4>What is Programming?</h4>
+     <div class="box_description">
+      <p>
+        A <span class="italic">web crawler</span> finds web pages for the search engine by starting a <span class="italic">seed page</span> and following links on that page to other pages, each of those, link to new web pages which can have new links to other pages.  As we follow the links we'll find more and more web pages building a collection of data that we'll use for our search engine.  A link is a special type of text in that web page.
+      </p>
+      <dl>
+        <dt>Computer</dt>
+          <dd>
+            a machine that can execute a program- with the right program, a computer can do any mechanical computation you can imagine
+          </dd>
+        <dt>Program</dt>
+          <dd> 
+            a very precise sequence of steps- since the computer is just a machine, the 	program must give the steps in a way that can be executed mechanically- that is, the program can 	be followed without any thought
+          </dd>
+        <dt>Programming</dt>
+          <dd>
+             a language designed for producing computer programs- a good programming language makes it easy for humans to read and write programs that can be executed by a computer
+          </dd>
+        <dt>Python</dt>
+          <dd>
+            a programming language- the programs that we write in the Python language will be the input to the Python interpreter, which is a program that runs on the computer- the Python interpreter reads our programs and executes them by following the rules of the Python language
+          </dd>
+        </dl>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Getting Started with Python<img class="pythonimg" alt="Here is the Python logo!" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR614jnm5UlIZUQthXb1IGTf_x6QQB0ZvLPvxAm95gjfdYZedN9FQ"></h4>
+     <div class="box_description">
+      <p>
+        2 parts to screen: editor & output window
+        We can see the value of something in Python by using print like this:
+      </p>
+      <ul>
+        <li>print 3...</li>
+        <li>prints out the value 3</li> 
+      </ul>
+      <p>
+        The expression after the print can be any value Python expression. Here are some examples:
+      </p>
+      <ul>
+        <li>1 + 1    addition</li>
+        <li>2 - 1    subtraction</li>
+        <li>2 * 6    multiplication</li>
+      </ul>
+      <p>
+        We can compose expressions to make more complicated expressions like: 
+      </p>
+      <ul>
+        <li>52 * 3 +12 * 9</li>
+      </ul>
+      <p>
+        We can also use parentheses to group expressions: 
+      </p>
+      <ul>
+        <li>(52 * 3) + (12 * 9)</li>
+      </ul>
+      <p>
+        is different from
+      </p>
+      <ul>
+        <li>52 * (3 + 12) * 9</li>
+      </ul>
+      <p>
+        For example, this code prints out the the number of hours in a day: 
+      </p>
+      <ul>
+        <li>print 365 * 24 * 60 * 60</li>
+      </ul>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Language Ambiguity</h4>
+     <div class="box_description">
+      <p>
+        Why write in Python instead of normal English?  
+      </p>
+      <ol>
+        <li>Natural languages are ambiguous ( open to more than one interpretation- a computer will run programs with the meaning we intended, thus we must kow exactly what our programs mean)</li>
+        <li>Natural languages are very verbose (wordy- to say something with the level of precision needed for a computer to be able to follow it mechanically would require an awful lot of writing)</li>
+      </ol>
+      <p>
+        Our goal in writing a program is for it to be short, so it is less work to write them, and easier to read and understand them.
+      </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Grammar</h4>
+     <div class="box_description">
+      <p>
+        Unlike a natural language, programming languages adhere to a strict grammatical structure.  In English, even if something is said or written incorrectly, it can still be understood with the help of context or other cues.  In programming, the code must match the language grammar exactly.  The Python interpreter has no idea what to do with input that is not in the Python language.
+      </p>
+      <ul>
+        <li>Basic English Grammar Rules:
+          <ul>
+            <li>sentence--subject, verb, noun</li>
+            <li>subject--noun</li>
+            <li>object--noun</li>
+            <li>verb--eat</li>
+            <li>verb--like</li>
+            <li>noun--I</li>
+            <li>noun--Python</li>
+            <li>noun--cookies</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        If programming grammar is not followed, the interpreter will return a syntax error; this means the structure of the code is inconsistent with the rules of the programming language.  Backus-Naur Form is used to describe a programming language in a simple and concise manner.
+      </p>
+      <ul>
+        <li>&lt;non-terminal>-->replacement&gt;</li>
+      </ul>
+      <p>
+        The "replacement" can be any sequence of zero, more-terminals, or more non-terminals. <span class="italic">Terminals</span> never appear on the left side of a rule.  Once you get a terminal there is nothing else you can replace it with.
+      </p>
+      <ul>
+        <li>sentence--subject verb noun</li>
+        <li>sentence--noun verb object</li>
+        <li>sentence--I verb object</li>
+        <li>sentence--I like object</li>
+        <li>sentence--I like noun</li>
+        <li>sentence--I like Python</li>
+      </ul>
+      <p>
+        In the above example, the "I like Python" has been replaced with ALL terminals, therefore it can't be replaced anymore.
+      </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Python Expressions</h4>
+     <div class="box_description">
+      <p>
+        An <span class="italic">expression</span> is something that has a value.  Examples of expressions in Python:
+      </p>
+      <ul>
+        <li>3</li>
+        <li>1+1</li>
+        <li>7*7*24*60</li>
+      </ul>
+      <p>
+        One of the rules of Python grammar for making expressions:  Expression--&gt;Expression Operator Expression.  The Expression non-terminal on the left can be replaced by an Expression, followed by an Operator, followed by another Expression.  It can have an Expression on both the left and right sides; this may look circular, and would be except for other rules for Expressions that don't include Expression on the right.  This is an example of <span class="italic">recursive definition</span>(we'll see more in Unit 6).  To have good recursive definition, we need two rules:
+      </p>
+      <ol>
+        <li>A rule that defines something in terms of itself. (Expression--&gt;Expression Operator Expression)
+        <li>A rule that defines that thing in terms of something else that we already know. (Expression--&gt;Number)
+      </ol>
+      <p>
+        Recursive definitions are a powerful idea in Computer Science.  They allow us to define infinitely many things using a few simple rules.  More on that in Unit 6... Here are some Python grammar rules for arithmetic expressions:
+      </p>
+      <ul>
+        <li>expression--&gt;expression operator expression</li>
+        <li>expression--&gt;number</li>
+        <li>operator--&gt;+</li>
+        <li>operator--&gt;*</li>
+        <li>number--&gt;0,1,...</li>
+      </ul>
+      <p>
+        Here is an example of derivation using this grammar:
+      </p>
+      <ul>
+        <li>Expression--&gt;Expression Operator Expression
+          <ul>
+            <li>--&gt;Expression + Expression</li>
+            <li>--&gt;Expression + Number</li>
+            <li>--&gt;Expression + 1</li>
+            <li>--&gt;Expression Operator Expression + 1</li>
+            <li>--&gt;Number Operator Expression + 1</li>
+            <li>--&gt;2 Operator Expression + 1</li>
+            <li>--&gt;2 * Expression + 1</li>
+            <li>--&gt;2 * Expression Operator Expression + 1</li>
+            <li>--&gt;2 * Number Operator Expression + 1</li>
+            <li>--&gt;2 * 3 Operator Expression + 1</li>
+            <li>--&gt;2 * 3 * Expression + 1</li>
+            <li>--&gt;2 * 3 * Number + 1</li>
+            <li>--&gt;2 * 3 * 3 + 1</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        We only have to add one more rule to our expression grammar to be able to produce all the expressions we have used so far: expression--&gt;(expression)
+      </p>
+     </div>
+  </div><!--end of unit 4-->
+
+  <h3>Unit 5: Variables and Strings</h3>
+
+  <div class="subheadingbox">
+    <h4>Basics of Variables and Strings</h4>
+     <div class="box_description">
+      <p>
+        <span class="italic">Variables</span> use an assignment statement, such as:
+      </p>
+      <ul>
+        <li>name=expression</li>
+        <li>speed_of_light=299792458</li>
+        <li>speed_of_light refers to value--&gt;299792458</li>
+      </ul>
+      <p>
+        So we can use variables to reference values/data, instead of using an actual value.  Variables can...vary (crazy, right?) so we can update our expression.  Also there is no hard fast rule, but typically variables shouldn't be Capitalized.  It's important to remember that "=" is an <span class="italic">assignment</span>, it doesn't mean that the values are equal!
+      </p>
+      <p>
+        <span class="italic">Strings</span> are a sequence of characters surrounded by quotes.  We can use single or double quotes.  The advantage to double quotes is that you can use single quotes inside of doube quotes.
+      </p>
+      <ul>
+        <li>name="dianna"</li>
+        <li>name='dianna'</li>
+      </ul>
+      <p>
+        The + in strings is <span class="italic">concatenation</span>(a linking of things together in a series) of the two strings.
+      </p>
+      <ul>
+        <li>print "hello"+name</li>
+        <li>so as not to say "hellodianna", add space after "hello "</li>
+        <li>can't add a string and number together; however, we can multiply them (print "!"*3--&gt; will give you 3 !'s)</li>
+      </ul>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>String Indexing</h4>
+     <div class="box_description">
+      <p>
+        If we have a string we can use square brackets to extract just part of a string.
+      </p>
+      <ul>
+        <li>string[expression]</li>
+        <li>"udacity"[0]--&gt;"u"</li>
+        <li>"udacity"[1+1]--&gt;"a"</li>
+        <li>name="dianna"</li>
+        <li>name[0]--&gt;"d"</li>
+      </ul>
+      <p>
+        If we use a negative number it will count backwards in string.  Not only can we select one position of a string, but we can select sub-sequences.  This means that the expression has a starting position and ending position.
+      </p>
+      <ul>
+        <li>string[expression:expression]</li>
+        <li>string[number:number]</li>
+      </ul>
+      <p>
+        Important to remember that they ending position is not included in the index.  We can also leave start ot stop position blank which would include the entire beginning up to the stop position, or the entire end of the string starting at the start position.
+      </p>      
+     </div>
+  </div><!--end of unit 5-->
+
+  <h3>Unit 6: Input--&gt;Function--&gt;Output</h3>
+
+  <div class="subheadingbox">
+    <h4>Using and Making Procedures</h4>
+     <div class="box_description">
+      <p>
+       <span class="italic">Procedures</span> are a way to package code so it can be reused with different inputs.  A procedure takes in inputs, does some processing, and produces outputs.  <span class="italic">Procedural abstraction</span> is a way to write code once that works on any number of different data values.  By turning our code into a procedure, we can use that code over and over again with different inputs to get different behaviors.
+       To make a procedure we need the "name" of the procedure followed by parenthesis with the list of inputs inside of them.  To show output, we must use "return" in code block.
+      </p>
+      <ul>
+        <li>def name(parameters): block of code</li>
+        <li>def name(input,input,...): code</li>
+        <li>return a+b, return a[1:], return "U"+a</li>
+      </ul>
+     </div>
+  </div><!--end of unit 6-->
+
+  <h3>Unit 7: Decisions and Repetition: If and While</h3>
+
+  <div class="subheadingbox">
+    <h4>Making Decisions.......</h4>
+     <div class="box_description">
+      <p>
+        <span class="italic">Comparisions</span> such as: &gt;,&lt;&gt; or =... Can be used with numbers to find a <span class="italic">boolean</span> value, "true" or "false".  Remember that "=" means an assignment, NOT equality!!  A "=="  is a comparison, meaning the two values are equal!
+      </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>If Statements</h4>
+     <div class="box_description">
+       <p>
+         To write an "If" statement: if &lt; test expression &gt;: ...some block of code...<br>
+         Ex. def absolute(x):<br>
+         <span class="tab">if x&lt;0:</span><br>
+         <span class="tab">x=-x</span><br>
+         <span class="tab">return x</span><br>
+         Ex. def is_friend(name):<br>
+         <span class="tab">if name[0]=='D':</span><br>
+         <span class="tab"><span class="tab">return true</span></span><br>
+         <span class="tab">else:</span><br>
+         <span class="tab"><span class="tab">return false</span></span><br>
+         <span class="tab">simpler version: return name[0]=='D'...as the procedure code</span><br>
+         If you wanted to find names that started with a 'D' or 'N' you could use: return name[0]=='D' <b>or</b> name[0]=='N'
+       </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Loopity, Loop, Loops!!!</h4>
+     <div class="box_description">
+       <p>
+         <span class="italic">Loops</span> allow things to be done over and over again.  A while loop will continue to run as long as the test expression is true, once it's false we go to the next expression.<br>
+         Ex. i=0<br>
+         <span class="tab">while i&lt;10:</span><br>
+         <span class="tab"><span class="tab">print i</span></span><br>
+         <span class="tab"><span class="tab">i=i+1</span></span><br>
+         <span class="tab"><span class="tab">false!!</span></span><br>
+         As long as a loop is true it will run forever. So a way must be set up for the loop to stop, else the code will result in an infinite loop.
+       </p>
+     </div>
+  </div><!--end of unit 7-->
+
+  <h3>Unit 8: Structured Data-Lists and For Loops</h3>
+
+  <div class="subheadingbox">
+    <h4>Intro</h4>
+     <div class="box_description">
+       <p>
+         A <span class="italic">string</span> is structured data, since a string can be broken down into a sequence of characters.  <span class="italic">Lists</span>  are a sequence of <b>anything</b>; strings, numbers, and other lists.  We use square brackets and commas to store a list; a list can also be assigned to a variable. 
+       </p>
+         <img class="screen-shot-intro" alt="A screenshot of the difference between string and lists." src="http://i.imgur.com/gftzHrl.png?1" >
+       <p>
+         Lists can also be empty, like this...'name_of_list'=[]  
+       </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Nested Lists</h4>
+     <div class="box_description">
+       <p>
+         Ex. Beatles=[['john', 1940], ['paul', 1942], ['george', 1943],['ringo', 1940]]<br><br>
+         If we call 'Beatles', it will print all of our lists.  If we call 'Beatles[3]' it will print the fourth position list.  If we call 'Beatles[3][1]' it will print the second position value of the fourth position list.<br><br>
+         We can also use values in lists to find numerical values.  Ex. countries=[['china', 'beijing',1350],['india', 'delhi',1210]]<br><br>
+         population=countries[0][2]/countries[1][2]-- When we 'print population'  It will return the value.  It will return a whole integer, unless a float is one of the input values of the list.
+       </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Mutation</h4>
+     <div class="box_description">
+       <p>
+         Lists support <span class="italic">mutation</span>, meaning we can change a value in a list after it's created.
+       </p>
+       <img class=".screen-shot-mutation" alt="Example of mutation in lists." src="http://i.imgur.com/FE5uKFu.png?1">
+       <p>
+         When introducing a new variable the new one will refer to the same list as the other variable.  So if we change 'p' to 'q' they will both refer to the same thing.  Whereas if we change the variable of the string, it becomes the new variable, and the old value becomes non-accessable.
+       </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Aliasing</h4>
+     <div class="box_description">
+       <p>
+         James Bond and 007 are the same person, just with different names.  That is similar to when we assign a different variable name to an existing list.  Same list, two names referring to it.
+       </p>
+       <img class="screen-shot-aliasing" alt="An example of aliasing." src="http://i.imgur.com/R0ecS4k.png?1">
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>List of Operations</h4>
+     <div class="box_description">
+       <p>
+         '.append'- list_name.append(element to add to list)<br>
+         '+' will combine the two lists into one list<br>
+         len(list), will give you a number of elements in list.  Note that, when a list has lists nested inside, whatever list is not first, regardless of length, will be counted as one.<br>
+         Ex. p=[1,2[3,4]]  --- len(p) gives '3' because list with 3 and 4 in it are counted as one
+       </p>
+     </div>
+  </div>
+
+  <div class="subheadingbox">
+    <h4>Loops-n-Lists</h4>
+     <div class="box_description">
+       <p>
+         <img class="screen-shot-loops" alt="This is an example of a for loop with a list" src="http://i.imgur.com/8GODGrW.png?1">
+       </p>
+       <p>
+         def sum_list(p):<br>
+         <span class="tab">result=0</span><br>
+         <span class="tab">for e in p:</span><br>
+         <span class="tab"><span class="tab">result=result+e</span></span><br>
+         <span class="tab">return result</span><br><br>
+         When the procedure 'sum_list' is called with the arguments, it will return the total sum of the values in the list.  The result keeps tract of the numerical result as it runs through the code, the starting value is 0 since nothing has been recorded.  'e' is each element in the list, which gets added to the next element, and then returns a new numerical value to 'result', until the end of the list is reached.
+       </p>
+       <p>
+         Next is an example of finding an element in list and returning it's index value.  One way will use a while loop and the other a for loop.
+       </p>
+       <img class="screen-shot-loops-2" alt="An example of indexing a list with both and while and for loop." src="http://i.imgur.com/zfedsqU.png">
+       <p>
+         We can also use '.index', which will search a list for the value  and return the index of the value.  However, if the value doesn't exist in the list, it will give an error.  'in' can be used in a for loop or... 'value'in'list'...if the value is in the list it will print true, if not it will print false.
+       </p>
+     </div>
+  </div>
+</div><!--end of stage 2 and unit 8-->
+
+</body>
+
+</html>

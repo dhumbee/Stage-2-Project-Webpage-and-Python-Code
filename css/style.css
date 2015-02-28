@@ -1,0 +1,81 @@
+body{
+ font-family:Candara; 
+ padding:20px;  
+ background-color:rgb(0,0,0);
+ background-image:url(http://www.zingerbugimages.com/backgrounds/pink_flame_fractal_background_seamless.jpg);
+ background-position:top left;
+ background-repeat:repeat;
+ background-attachment:fixed;
+}
+#header{
+  text-align:left;
+  color:white;
+  font-size:25px;
+}
+ h1{ 
+  text-align:center;
+   margin:30px;
+}
+h3{
+  text-align:center;
+  font-size:25px
+}
+h4{
+  text-align:center;
+  text-decoration:underline;
+  font-size:20px;
+}
+style{
+  font-size: 12px;
+}
+dt{
+  text-decoration:underline;
+}
+img{
+  border: 1px #666666 solid;
+  background-color: white;
+  width:30%;
+}
+.screen-shot-intro{
+  margin:10px;
+}
+.pythonimg{
+  vertical-align:middle;
+  margin:20px;
+  width:3%;
+}
+.new_stage{
+  background-color:rgb(0,0,0);
+  background-image:url(http://www.zingerbugimages.com/backgrounds/black_painted_textured_wall_tileable.jpg);
+  background-position:top left;
+  background-repeat:repeat;
+  background-attachment:fixed;
+  border: 2px black solid;
+	border-radius:20px;
+  margin:30px; 
+  color:white;
+}
+.subheadingbox{
+  color:black;
+  padding:10px;
+  border: 1px #666666 solid;
+  margin:40px;
+  border-radius:20px;
+  background-color:rgb(0,0,0);
+  background-image:url(http://www.zingerbugimages.com/backgrounds/wrinkled_white_paper_background_1800x1600.jpg);
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.box_description{
+  padding-left:20px;
+  padding-right:20px;
+  margin:10px;
+}
+.italic{
+   font-style:italic; 
+}
+.tab{
+  margin-left:40px;
+}
+ 
